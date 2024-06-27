@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #333;
+        }
+        #introduction {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #introduction p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        #candidates {
+            margin-bottom: 20px;
+        }
+        .candidate {
+            background: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        .candidate span {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voting System</h1>
+    <div id="introduction">
+        <p>This Voting System utilizes blockchain technology for secure and transparent voting.</p>
+    </div>
+    <div id="candidates"></div>
+    <div>
+        <input type="number" id="candidateId" placeholder="Enter candidate ID">
+        <button onclick="vote()">Vote</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
